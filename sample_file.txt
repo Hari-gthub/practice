@@ -1,0 +1,13 @@
+hi, all here my sql code for create masking policy for account balance <br>
+=> <br>
+create or replace masking policy database_name.schema_name.masking_policy_name <br>
+as  (val number) return number -> <br>
+case when current_role()in('sysadnin') then val <br>
+else o <br>
+end;
+<br>
+=> here add masking polict for target column
+<br>
+alter table database.schema.table_name modify column column_name
+<br>
+set masking policu masking_name;
