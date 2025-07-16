@@ -1,0 +1,20 @@
+MASKING POLICY 
+-----------------
+masking policy means to hide the sencitive data from database tables 
+-> for example you develop a code and  you got some error ,you don't what exactly error is 
+  you share you table information to other people in your team and you don't want to share your table sescitive data 
+  that time you create masking policy and impliment that depensensitive data columns.
+  access the data who has sysadmin,accountadmin priviliges then grant it.
+
+  here syntax is
+
+  create or replace masking policy database_name.schema_name.masking_policy_name
+  as (val number) returns number ->
+  case 
+    when current_role()in('sysadmin','accountadmin') then val
+    else 0
+    end;
+
+alter table database_name.schema_name.table_name modify column column_name
+set masking policy masking_policy_name;
+
