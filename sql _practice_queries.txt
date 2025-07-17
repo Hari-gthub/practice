@@ -1,0 +1,12 @@
+HERE SOME PRACTICE QUERIES AND QUESTIONS ON SQL/PLSQL
+=========================================================================;
+1.what if UNIONALL replace with UNION operator.
+2.explain about PRAGMA AUTONOMOUS_TRANSACTION.
+3.about OUTER JOINS and what are they explain in detail.
+4.what is CURSOR ERROR number.
+5.what is mean by pragma.
+6.what is your openion about VARIABLE DECLERATION.
+7.write a query to find employees with their job and write all employees under their job column.
+8.calculate running sum on sal column in employee table based on department number.
+9.difference between invisuable column and virtual column.
+10.write a query to find rank on employee salary,ex.salary is 2788 find his rank without using window/analytical functions.
